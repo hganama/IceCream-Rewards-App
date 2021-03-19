@@ -1,0 +1,85 @@
+{
+  "project_info": {
+    "project_number": "954604512183",
+    "firebase_url": "https://icecream-rewards-app.firebaseio.com",
+    "project_id": "icecream-rewards-app",
+    "storage_bucket": "icecream-rewards-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954604512183:android:39bbfd5d206f0ed7bfbe32",
+        "android_client_info": {
+          "package_name": "com.ksu.icecreamrewardsapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954604512183-gg9vsudlttjj3q0pbumdivjihtopa9j0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ksu.icecreamrewardsapp",
+            "certificate_hash": "e48575f5b8c9fb8ff7b7997f1a9cf67780731111"
+          }
+        },
+        {
+          "client_id": "954604512183-hi54r159ddgo7olhsgufkhrhmqf0h01l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX6Inl2ltQSjdcU0KtzcTqJrAvQ57fOz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954604512183-hi54r159ddgo7olhsgufkhrhmqf0h01l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954604512183:android:9204bf2715f22e3abfbe32",
+        "android_client_info": {
+          "package_name": "com.ksu.icecreamrewardsystem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "954604512183-jn590hq1s6hlghg9kve853svqtfg76oq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ksu.icecreamrewardsystem",
+            "certificate_hash": "20babe73350e3c42f1352f4537d1f88fd083e30d"
+          }
+        },
+        {
+          "client_id": "954604512183-hi54r159ddgo7olhsgufkhrhmqf0h01l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDX6Inl2ltQSjdcU0KtzcTqJrAvQ57fOz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "954604512183-hi54r159ddgo7olhsgufkhrhmqf0h01l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

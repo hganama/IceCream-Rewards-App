@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.managevip.VipDetailsActivity">
+
+    <TextView
+        android:id="@+id/VIPCustomerDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:text="VIP Customer Details"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/PersonalInformation"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="#4150B2"
+        android:gravity="center_vertical|right"
+        android:text="  Personal Information"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VIPCustomerDetails" />
+
+    <View
+        android:id="@+id/MainViewHolder"
+        android:layout_width="386dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PersonalInformation" />
+
+    <View
+        android:id="@+id/FirstNameViewHolder"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/MainViewHolder"
+        app:layout_constraintTop_toTopOf="@+id/MainViewHolder" />
+
+    <View
+        android:id="@+id/BirthdateViewHolder"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/MainViewHolder"
+        app:layout_constraintTop_toBottomOf="@+id/FirstNameViewHolder" />
+
+    <View
+        android:id="@+id/AddressViewHolder"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toEndOf="@+id/BirthdateViewHolder"
+        app:layout_constraintTop_toBottomOf="@+id/LastNameViewHolder" />
+
+    <View
+        android:id="@+id/LastNameViewHolder"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toEndOf="@+id/FirstNameViewHolder"
+        app:layout_constraintTop_toBottomOf="@+id/PersonalInformation" />
+
+    <TextView
+        android:id="@+id/firstNameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="First Name"
+        app:layout_constraintStart_toStartOf="@+id/FirstNameViewHolder"
+        app:layout_constraintTop_toTopOf="@+id/FirstNameViewHolder" />
+
+    <TextView
+        android:id="@+id/BirthdateHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Birthdate"
+        app:layout_constraintStart_toStartOf="@+id/BirthdateViewHolder"
+        app:layout_constraintTop_toTopOf="@+id/BirthdateViewHolder" />
+
+    <TextView
+        android:id="@+id/addressHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Address"
+        app:layout_constraintStart_toStartOf="@+id/AddressViewHolder"
+        app:layout_constraintTop_toTopOf="@+id/AddressViewHolder" />
+
+    <TextView
+        android:id="@+id/lastnameHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Last Name"
+        app:layout_constraintStart_toStartOf="@+id/LastNameViewHolder"
+        app:layout_constraintTop_toTopOf="@+id/LastNameViewHolder" />
+
+    <Button
+        android:id="@+id/firstNameEditButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_edit_black"
+        app:layout_constraintBottom_toBottomOf="@+id/FirstNameViewHolder"
+        app:layout_constraintEnd_toEndOf="@+id/FirstNameViewHolder" />
+
+    <Button
+        android:id="@+id/birthdateEditButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_edit_black"
+        app:layout_constraintBottom_toBottomOf="@+id/BirthdateViewHolder"
+        app:layout_constraintEnd_toEndOf="@+id/BirthdateViewHolder" />
+
+    <Button
+        android:id="@+id/addressEditButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_edit_black"
+        app:layout_constraintBottom_toBottomOf="@+id/AddressViewHolder"
+        app:layout_constraintEnd_toEndOf="@+id/AddressViewHolder" />
+
+    <Button
+        android:id="@+id/lastnameEditButton"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_edit_black"
+        app:layout_constraintBottom_toBottomOf="@+id/LastNameViewHolder"
+        app:layout_constraintEnd_toEndOf="@+id/LastNameViewHolder" />
+
+    <EditText
+        android:id="@+id/firstNameEditText"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/firstNameEditButton"
+        app:layout_constraintStart_toStartOf="@+id/FirstNameViewHolder"
+        app:layout_constraintTop_toBottomOf="@+id/firstNameHeader" />
+
+    <EditText
+        android:id="@+id/birthdate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/birthdateEditButton"
+        app:layout_constraintStart_toStartOf="@+id/BirthdateViewHolder"
+        app:layout_constraintTop_toBottomOf="@+id/BirthdateHeader" />
+
+    <EditText
+        android:id="@+id/address"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/addressEditButton"
+        app:layout_constraintStart_toStartOf="@+id/AddressViewHolder"
+        app:layout_constraintTop_toBottomOf="@+id/addressHeader" />
+
+
+    <EditText
+        android:id="@+id/lastNameEditText"
+        android:layout_width="132dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="20dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toStartOf="@+id/lastnameEditButton"
+        app:layout_constraintStart_toStartOf="@+id/LastNameViewHolder"
+        app:layout_constraintTop_toBottomOf="@+id/lastnameHeader" />
+
+    <TextView
+        android:id="@+id/VIPPoints"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="#4150B2"
+        android:gravity="center_vertical|right"
+        android:text="  VIP Points"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainViewHolder" />
+
+    <View
+        android:id="@+id/MainViewHolder2"
+        android:layout_width="386dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VIPPoints" />
+
+    <View
+        android:id="@+id/VIPStatusView"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/MainViewHolder2"
+        app:layout_constraintTop_toTopOf="@+id/MainViewHolder2" />
+
+    <View
+        android:id="@+id/monthyPointsView"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/MainViewHolder2"
+        app:layout_constraintTop_toBottomOf="@+id/VIPStatusView" />
+
+    <View
+        android:id="@+id/VIPCardView"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toEndOf="@+id/monthyPointsView"
+        app:layout_constraintTop_toBottomOf="@+id/totalPointsView" />
+
+    <View
+        android:id="@+id/totalPointsView"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toEndOf="@+id/VIPStatusView"
+        app:layout_constraintTop_toTopOf="@+id/MainViewHolder2" />
+
+    <TextView
+        android:id="@+id/VIPStatusHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="VIP Status"
+        app:layout_constraintStart_toStartOf="@+id/VIPStatusView"
+        app:layout_constraintTop_toTopOf="@+id/VIPStatusView" />
+
+    <TextView
+        android:id="@+id/monthlyPointsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Monthly Points"
+        app:layout_constraintStart_toStartOf="@+id/monthyPointsView"
+        app:layout_constraintTop_toTopOf="@+id/monthyPointsView" />
+
+    <TextView
+        android:id="@+id/VIPCardHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="VIP Card"
+        app:layout_constraintStart_toStartOf="@+id/VIPCardView"
+        app:layout_constraintTop_toTopOf="@+id/VIPCardView" />
+
+    <TextView
+        android:id="@+id/totalPointsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Total Points"
+        app:layout_constraintStart_toStartOf="@+id/totalPointsView"
+        app:layout_constraintTop_toTopOf="@+id/totalPointsView" />
+
+
+    <Button
+        android:id="@+id/VIPStar2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_star_gold"
+        app:layout_constraintBottom_toBottomOf="@+id/VIPStatusView"
+        app:layout_constraintEnd_toEndOf="@+id/VIPStatusView" />
+
+    <TextView
+        android:id="@+id/Orders"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="#4150B2"
+        android:gravity="center_vertical|right"
+        android:text="  Orders/Pre-orders"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainViewHolder2" />
+
+    <Button
+        android:id="@+id/vipCardButton"
+        android:layout_width="0dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="5dp"
+        android:background="#4150B2"
+        android:text="View"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="@+id/VIPCardView"
+        app:layout_constraintStart_toStartOf="@+id/VIPCardView"
+        app:layout_constraintTop_toBottomOf="@+id/VIPCardHeader" />
+
+    <TextView
+        android:id="@+id/vipStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/VIPStatusView"
+        app:layout_constraintTop_toBottomOf="@+id/VIPStatusHeader" />
+
+    <TextView
+        android:id="@+id/monthlyPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/monthyPointsView"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyPointsHeader" />
+
+    <TextView
+        android:id="@+id/totalPoints"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/totalPointsView"
+        app:layout_constraintTop_toBottomOf="@+id/totalPointsHeader" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

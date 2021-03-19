@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ui.home.HomeFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+<TextView
+    android:id="@+id/VIPCustomerDetails"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:layout_marginTop="20dp"
+    android:text="Sale"
+    android:textSize="24sp"
+    android:textStyle="bold"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/VIPPoints"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:background="#4150B2"
+        android:gravity="center_vertical|right"
+        android:text="  VIP Customer"
+        android:textAlignment="viewStart"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VIPCustomerDetails" />
+
+    <View
+        android:id="@+id/MainViewHolder2"
+        android:layout_width="386dp"
+        android:layout_height="178dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/border"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/VIPPoints" />
+
+    <View
+        android:id="@+id/VIPStatusView"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/MainViewHolder2"
+        app:layout_constraintTop_toTopOf="@+id/MainViewHolder2" />
+
+    <EditText
+        android:id="@+id/vipIdHome"
+        android:layout_width="130dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="9dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintStart_toStartOf="@+id/VIPStatusView"
+        app:layout_constraintTop_toBottomOf="@+id/VIPStatusHeader" />
+
+    <View
+        android:id="@+id/monthyPointsView"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toStartOf="@+id/MainViewHolder2"
+        app:layout_constraintTop_toBottomOf="@+id/VIPStatusView" />
+
+    <View
+        android:id="@+id/VIPCardView"
+        android:layout_width="185dp"
+        android:layout_height="80dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/border"
+        app:layout_constraintStart_toEndOf="@+id/monthyPointsView"
+        app:layout_constraintTop_toBottomOf="@+id/totalPointsView" />
+
+<View
+    android:id="@+id/totalPointsView"
+    android:layout_width="185dp"
+    android:layout_height="80dp"
+    android:layout_marginStart="5dp"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/border"
+    app:layout_constraintStart_toEndOf="@+id/VIPStatusView"
+    app:layout_constraintTop_toTopOf="@+id/MainViewHolder2" />
+
+    <TextView
+        android:id="@+id/VIPStatusHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="VIP ID"
+        app:layout_constraintStart_toStartOf="@+id/VIPStatusView"
+        app:layout_constraintTop_toTopOf="@+id/VIPStatusView" />
+
+    <TextView
+        android:id="@+id/monthlyPointsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="VIP Status"
+        app:layout_constraintStart_toStartOf="@+id/monthyPointsView"
+        app:layout_constraintTop_toTopOf="@+id/monthyPointsView" />
+
+    <TextView
+        android:id="@+id/VIPCardHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Total Points"
+        app:layout_constraintStart_toStartOf="@+id/VIPCardView"
+        app:layout_constraintTop_toTopOf="@+id/VIPCardView" />
+
+    <TextView
+        android:id="@+id/totalPointsHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:text="Name"
+        app:layout_constraintStart_toStartOf="@+id/totalPointsView"
+        app:layout_constraintTop_toTopOf="@+id/totalPointsView" />
+
+
+    <Button
+        android:id="@+id/VIPStar2"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="25dp"
+        android:background="@drawable/ic_star_gold"
+        app:layout_constraintBottom_toBottomOf="@+id/MainViewHolder2"
+        app:layout_constraintEnd_toEndOf="@+id/monthyPointsView" />
+
+    <Button
+        android:id="@+id/doneButtonHome"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/ic_check"
+        app:layout_constraintBottom_toBottomOf="@+id/VIPStatusView"
+        app:layout_constraintEnd_toEndOf="@+id/VIPStatusView" />
+
+        <TextView
+            android:id="@+id/Orders"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:background="#4150B2"
+            android:gravity="center_vertical|right"
+            android:text="  Details"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/icecreamButton" />
+
+    <TextView
+        android:id="@+id/statusHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/monthyPointsView"
+        app:layout_constraintTop_toBottomOf="@+id/monthlyPointsHeader" />
+
+    <TextView
+        android:id="@+id/totalPointsHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/VIPCardView"
+        app:layout_constraintTop_toBottomOf="@+id/VIPCardHeader" />
+
+    <TextView
+        android:id="@+id/fullNameHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@+id/totalPointsView"
+        app:layout_constraintTop_toBottomOf="@+id/totalPointsHeader" />
+
+    <RadioButton
+        android:id="@+id/orderRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Order"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/MainViewHolder2" />
+
+    <RadioButton
+        android:id="@+id/PreorderRadioButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="15dp"
+        android:text="Pre-order"
+        app:layout_constraintStart_toEndOf="@+id/orderRadioButton"
+        app:layout_constraintTop_toBottomOf="@+id/MainViewHolder2" />
+
+    <Button
+        android:id="@+id/icecreamButton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="19dp"
+        android:background="#4150B2"
+        android:text="Ice Cream"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/orderRadioButton" />
+
+    <Button
+        android:id="@+id/frozenYogurtButton"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="10dp"
+        android:background="#4150B2"
+        android:text="Frozen Yogurt"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/PreorderRadioButton" />
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="393dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Orders" />
+
+        <ListView
+            android:id="@+id/ordersListView"
+            android:layout_width="417dp"
+            android:layout_height="128dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view2">
+
+        </ListView>
+
+    <TextView
+        android:id="@+id/Item"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="9dp"
+        android:text="Item"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/Orders" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="9dp"
+        android:text="Quantity"
+        app:layout_constraintStart_toEndOf="@+id/Item"
+        app:layout_constraintTop_toBottomOf="@+id/Orders" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="9dp"
+        android:text="Price"
+        app:layout_constraintStart_toEndOf="@+id/textView7"
+        app:layout_constraintTop_toBottomOf="@+id/Orders" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TextView"
+            tools:layout_editor_absoluteX="250dp"
+            tools:layout_editor_absoluteY="318dp" />
+
+        <Button
+            android:id="@+id/placeOrderButton"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginEnd="8dp"
+            android:text="Place order"
+            app:layout_constraintBottom_toBottomOf="@+id/Orders"
+            app:layout_constraintEnd_toEndOf="@+id/Orders"
+            app:layout_constraintTop_toTopOf="@+id/Orders" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
